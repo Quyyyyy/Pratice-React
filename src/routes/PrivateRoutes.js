@@ -1,8 +1,7 @@
-import { useContext } from 'react';
-import { UserContext } from '../context/UserContext';
+import { useSelector } from 'react-redux';
 
 const PrivateRoutes = (props) => {
-    const { user  } = useContext(UserContext);
+    const user = useSelector(state => state.user.account);
 
     if (user && !user.auth){
         return <>
@@ -10,7 +9,7 @@ const PrivateRoutes = (props) => {
         </>
     }
 
-    console.log(`asdfasfasf`)
+    //console.log(`asdfasfasf`)
 
     return (
         <>

@@ -8,7 +8,7 @@ import _ from 'lodash';
 import {debounce} from 'lodash';
 import ModalConfirm from './ModalConfirm';
 import './TableUsers.scss';
-import { CSVDownload, CSVLink } from 'react-csv';
+import { CSVLink } from 'react-csv';
 import Papa from 'papaparse';
 import { toast } from 'react-toastify';
 
